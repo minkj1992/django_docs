@@ -20,7 +20,7 @@ person_detail(4)
 ```
 
 ## CBV
-> 재사용을 위해서 사용하는 일종의 템플릿
+> 재사용을 위해서 사용하는 일종의 템플릿 (DRY principle)
 
 ```python
 class DetailView:
@@ -76,3 +76,4 @@ class Person:
         random_name = ''.join(random.choice(gender+country) for i in range(level))
         return Person(random_name, gender, country)
 ```
+
